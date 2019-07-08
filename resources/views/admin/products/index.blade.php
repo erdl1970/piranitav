@@ -8,10 +8,18 @@
     <div class="main main-raised">
         <div class="container">
             <div class="section text-center">
-                <h2 class="title">Listado de Productos</h2>
+                <h2 class="title text-left">Listado de Productos</h2>
 
                 <div class="team">
                     <div class="row">
+
+<table border="0">
+<td>
+    <h4>Administre sus productos</h4>
+</td>
+
+</table>
+
 
 
 

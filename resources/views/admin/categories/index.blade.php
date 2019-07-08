@@ -8,7 +8,14 @@
     <div class="main main-raised">
         <div class="container">
             <div class="section text-center">
-                <h2 class="title">Listado de Categorías</h2>
+                <h2 class="title text-left">Listado de Categorías</h2>
+
+                <table border="0">
+                    <td>
+                        <h4>Administre sus categorías</h4>
+                    </td>
+
+                </table>
 
                 <div class="team">
                     <div class="row">

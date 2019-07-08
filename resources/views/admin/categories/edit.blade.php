@@ -12,7 +12,7 @@
         <div class="container">
 
             <div class="section">
-                <h2 class="title text-center">Editar categoría seleccionada</h2>
+                <h2 class="title text-left">Editar categoría seleccionada</h2>
 
                 @if ($errors->any())
                     <div class="alert alert-danger">

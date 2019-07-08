@@ -7,17 +7,18 @@
     .team .row .col-md-4 {
         margin-bottom: 5em;
     }
-    .row {
+    .team .row {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
         display:         flex;
         flex-wrap: wrap;
     }
-    .row > [class*='col-'] {
+    .team .row > [class*='col-'] {
         display: flex;
         flex-direction: column;
     }
+/*
 
     .tt-query {
         -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -29,7 +30,7 @@
         color: #999
     }
 
-    .tt-menu {    /* used to be tt-dropdown-menu in older versions */
+    .tt-menu {    !* used to be tt-dropdown-menu in older versions *!
         width: 190px;
         margin-top: 4px;
         padding: 4px 0;
@@ -59,6 +60,7 @@
         margin: 0;
     }
 
+*/
 
 
 </style>
@@ -69,7 +71,7 @@
     <div class="header header-filter" style="background-image: url('<?php echo e(asset('img/530206.jpg')); ?>');">
         <div class="container">
             <div class="row">
-                <hr>
+
                 <div class="col-md-6">
                     <h1 class="title" class="media-middle">Bienvenido a nuestra tienda online</h1>
                     <h4>Realiza tus pedidos en línea y te contactaremos para coordinar la entrega</h4>

@@ -12,7 +12,7 @@
         <div class="container">
 
             <div class="section">
-                <h2 class="title text-center">Editar producto seleccionado</h2>
+                <h2 class="title text-left">Editar producto seleccionado</h2>
 
                 @if ($errors->any())
                     <div class="alert alert-danger">
@@ -25,8 +25,11 @@
                     </div>
                 @endif
 
+
                 <form method="post" action="{{url('/admin/products/'.$product->id.'/edit')}}">
                     {{csrf_field()}}
+
+
 
                     <div class="row">
                         <div class="col-sm-6">
@@ -54,6 +57,8 @@
                                 <input type="text" class="form-control" name="description" value="{{old('description', $product->description)}}">
                             </div>
                         </div>
+
+
 
                         <div class="col-sm-6">
                             <div class="form-group label-floating">

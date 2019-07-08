@@ -1,4 +1,11 @@
-<!doctype html>
+
+
+
+
+
+
+
+        <!doctype html>
 <html lang="es">
 <head>
     <meta charset="utf-8"/>
@@ -6,7 +13,7 @@
     <link rel="icon" type="image/png" href="../assets/img/favicon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 
-    <title><?php echo $__env->yieldContent('title', 'Pirañita Acuario'); ?></title>
+    <title><?php echo $__env->yieldContent('title', config('app.name')); ?></title>
 
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
 
@@ -23,6 +30,7 @@
 
 </head>
 
+
 <body class="<?php echo $__env->yieldContent('body-class'); ?>"> <!--DEFINIENDO UNA SECCION -->
 <nav class="navbar navbar-transparent navbar-absolute">
     <div class="container">
@@ -34,28 +42,42 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <div class="img-circle img-responsive img-raised">
-                <ul>
-                    <li class="li">
-                        <a class="navbar-brand" href="<?php echo e(url('/')); ?>"><h4> Home</h4></a>
-                    </li>
-                    <li class="li">
-                        <a class="navbar-brand" href="<?php echo e(url('/')); ?>"><img class="tamaño" src="<?php echo e('/img/logopirana.png'); ?>"></a>
-                    </li>
+        </div>
+    </div>
 
-                </ul>
-            </div>
+    
+
+
+    
+<div >
+    <div>
+        <div class="col-md-4">
+            <a class="navbar-brand text-center" href="<?php echo e(url('/')); ?>"><h4>Home</h4></a>
+        </div>
+        <div class="col-md-3">
 
         </div>
+        <div class="col-md-4 float"  >
+            <a  class="navbar-brand "  href="<?php echo e(url('/')); ?>"><img class="tamaño" src="<?php echo e('/img/logopirana.png'); ?>"></a>
+        </div>
+
+    </div>
+</div>
+
+
+
+    <div>
 
         <div class="collapse navbar-collapse" id="navigation-example">
             <ul class="nav navbar-nav navbar-right">
                 <?php if(auth()->guard()->guest()): ?>
+
                     <li><a href="<?php echo e(route('login')); ?>">Ingresar</a></li>
                     <li><a href="<?php echo e(route('register')); ?>">Registro</a></li>
                 <?php else: ?>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                           aria-expanded="false"
                            aria-haspopup="true" v-pre>
                             <?php echo e(Auth::user()->name); ?> <span class="caret"></span>
                         </a>
@@ -110,7 +132,11 @@
             </ul>
         </div>
     </div>
+
+    </div>
 </nav>
+
+
 <div class="wrapper">
 
 
