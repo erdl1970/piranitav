@@ -90,6 +90,7 @@
                     </tbody>
                 </table>
 
+                <p><strong>Importe a pagar: </strong><?php echo e(auth()->user()->cart->total); ?></p>
 
                 <div class="text-center">
                     <form method="post" action="<?php echo e(url('/order')); ?>">

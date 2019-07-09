@@ -3,7 +3,7 @@
 <?php $__env->startSection('body-class','profile-page'); ?>
 
 <?php $__env->startSection('content'); ?>
-    <
+
     <div class="header header-filter" style="background-image: url('<?php echo e(asset('img/530206.jpg')); ?>');"></div>
 
     <div class="main main-raised">

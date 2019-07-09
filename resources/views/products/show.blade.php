@@ -5,7 +5,7 @@
 @section('body-class','profile-page')
 
 @section('content')
-    <
+
     <div class="header header-filter" style="background-image: url('{{asset('img/530206.jpg')}}');"></div>
 
     <div class="main main-raised">

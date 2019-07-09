@@ -88,6 +88,7 @@
                     </tbody>
                 </table>
 
+                <p><strong>Importe a pagar: </strong>{{auth()->user()->cart->total}}</p>
 
                 <div class="text-center">
                     <form method="post" action="{{url('/order')}}">
