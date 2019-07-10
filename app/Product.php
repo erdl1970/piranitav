@@ -36,7 +36,7 @@ public function category()
     }
 
     //default
-      return '/images/products/default.png';
+      return '/images/default.png';
   }
 
 

@@ -12,7 +12,7 @@
         <div class="container">
 
             <div class="section">
-                <h2 class="title text-center">Panel de Compras</h2>
+                <h2 class="title text-left">Panel de Compras</h2>
 
                 @if (session('notification'))
                     <div class="alert alert-warning">

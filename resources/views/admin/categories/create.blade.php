@@ -12,7 +12,9 @@
         <div class="container">
 
             <div class="section">
-                <h2 class="title text-center">Registrar nueva categoría</h2>
+                <h2 class="title text-left">Registrar nueva categoría</h2>
+
+
 
                 @if ($errors->any())
                     <div class="alert alert-danger">
@@ -25,15 +27,20 @@
                     </div>
                 @endif
 
-                <form method="post" action="{{url('/admin/categories')}}">
+                <form method="post" action="{{url('/admin/categories')}}" enctype="multipart/form-data">
                     {{csrf_field()}}
 
                     <div class="row">
-                        <div class="col-sm-6">
+                        <div class="col-sm-4">
                             <div class="form-group label-floating">
                                 <label class="control-label">Nombre de la categoría</label>
                                 <input type="text" class="form-control" name="name" value="{{old('name')}}">
                             </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                                <label class="control-label">Imagen de la categoría</label>
+                                <input type="file" name="image">
                         </div>
 
                     </div>
